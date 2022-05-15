@@ -1,9 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let breakUpString = word.split('');
+  let reverseOrder = breakUpString.reverse();
+  let joinBackTogether = reverseOrder.join('')
+  if (joinBackTogether === word){
+    return true;
+  } if (joinBackTogether !== word){
+    return false;
+  }
 }
+
+// console.log(isPalindrome('abby'))
 
 /* 
   Add your pseudocode here
+  -first break up the string
+  -reverse the order of the string
+  -join the string back together
 */
 
 /*
